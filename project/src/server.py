@@ -65,7 +65,7 @@ if __name__ == "__main__":
     bot.set_echo(e1)
 
     print "This is a chat with a bot. Send a message:"
-    message = raw_input("You: ")
+    message = raw_input("You : ")
     bot.send_message(message)
 
     sleep(1)
