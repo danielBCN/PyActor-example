@@ -2,12 +2,15 @@
 Usage example of the PyActor library versioning a insult server.
 Author: Daniel Barcelona Pons <daniel.barcelona@urv.cat>
 '''
-from random import randint
+import hashlib
 
 from pyactor.context import set_context, create_host, sleep, shutdown
 
 
 class Echo(object):
+    '''
+    Echo is a simple channel that prints messages on screen.
+    '''
     _tell = ['echo']
     _ask = []
 
@@ -16,6 +19,9 @@ class Echo(object):
 
 
 class Bot(object):
+    '''
+    Bot is an actor that represents a server that 'answers' messages.
+    '''
     _tell = ['set_echo', 'send_message']
     _ask = ['get_name']
     _ref = ['set_echo']
@@ -25,14 +31,30 @@ class Bot(object):
                           '...', 'said something?']
 
     def set_echo(self, echo):
+        '''
+        Sets the echo channel for the bot.
+        :param echo: The echo actor channel.
+        '''
         self.echo = echo
 
     def get_name(self):
+        '''
+        Returns the name of this bot.
+
+        :return: Str. Its name.
+        '''
         return self.id
 
     def send_message(self, message):
-        message = None
-        self.echo.echo(self.responses[randint(0, 5)], self.proxy)
+        '''
+        Recieves a message and answers it by printing through the echo channel.
+
+        :param str. message: The message sended to the bot.
+        '''
+        m = hashlib.md5()
+        m.update(message)
+        num = int(m.hexdigest()[:1], 16) % 6
+        self.echo.echo(self.responses[num], self.proxy)
 
 
 if __name__ == "__main__":

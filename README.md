@@ -5,6 +5,10 @@ This is a simple project example on github using the
 
 [![Build Status](https://travis-ci.org/danielBCN/PyActor-example.svg?branch=master)](https://travis-ci.org/danielBCN/PyActor-example)
 [![codecov](https://codecov.io/gh/danielBCN/PyActor-example/branch/master/graph/badge.svg)](https://codecov.io/gh/danielBCN/PyActor-example)
+[![Code Health](https://landscape.io/github/danielBCN/PyActor-example/master/landscape.svg?style=flat)](https://landscape.io/github/danielBCN/PyActor-example/master)
+[![Documentation Status](https://readthedocs.org/projects/pyactor-example/badge/?version=latest)](http://pyactor-example.readthedocs.io/en/latest/?badge=latest)
+
+
 
 ## Installing PyActor
 
@@ -135,3 +139,31 @@ on your readme.
 
 
 ## Code Health
+
+There is also another page that checks directly the health of your code. This
+means that the service analyzes the code searching for inconsistences with the
+PEP8 style guide, common bad smells and errors.
+
+This results in health rate that gives the code a score.
+
+Also, the health is represented in a badge that you can put on your readme.
+
+[![Code Health](https://landscape.io/github/danielBCN/PyActor-example/master/landscape.svg?style=flat)](https://landscape.io/github/danielBCN/PyActor-example/master)
+
+## Documentation
+
+Is very important to always document your code.
+
+To set up your docs at readthedocs.org, follow the guide to build a new
+documentation project in rst using sphinx:
+https://docs.readthedocs.io/en/latest/getting_started.html
+
+Then, add a .rst file on the docs directory with the text you want.
+Reference that file in the index.rst file, so it appears on the docs.
+
+If you want to generate documentations from the source files, you will need to
+add the extension 'autodoc' during the sphinx setup. Then, add the corresponding
+lines on a .rst file. For this to work, the project must be installed in the
+python path, by creating a setup.py file and configuring it on readthedocs.
+
+[![Documentation Status](https://readthedocs.org/projects/pyactor-example/badge/?version=latest)](http://pyactor-example.readthedocs.io/en/latest/?badge=latest)
