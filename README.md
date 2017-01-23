@@ -101,7 +101,7 @@ of your project, so it will appear on the github page.
 
 [![Build Status](https://travis-ci.org/danielBCN/PyActor-example.svg?branch=master)](https://travis-ci.org/danielBCN/PyActor-example)
 
-# Code Coverage
+## Code Coverage
 
 The code coverage of a project is the percentage of lines that are tested on
 the tests.
@@ -134,4 +134,4 @@ on your readme.
 [![codecov](https://codecov.io/gh/danielBCN/PyActor-example/branch/master/graph/badge.svg)](https://codecov.io/gh/danielBCN/PyActor-example)
 
 
-# Code Health
+## Code Health
