@@ -3,6 +3,8 @@
 This is a simple project example on github using the
 [PyActor](https://github.com/pedrotgn/pyactor) library.
 
+[![Build Status](https://travis-ci.org/danielBCN/PyActor-example.svg?branch=master)](https://travis-ci.org/danielBCN/PyActor-example)
+[![codecov](https://codecov.io/gh/danielBCN/PyActor-example/branch/master/graph/badge.svg)](https://codecov.io/gh/danielBCN/PyActor-example)
 
 ## Installing PyActor
 
@@ -94,6 +96,11 @@ The Travis configuration file has much more possibilities to offer. Feel free to
 learn more about it by reading the
 [docs](https://docs.travis-ci.com/user/customizing-the-build) and try them.
 
+When Travis is working, it will generate a badge that you can put on the readme
+of your project, so it will appear on the github page.
+
+[![Build Status](https://travis-ci.org/danielBCN/PyActor-example.svg?branch=master)](https://travis-ci.org/danielBCN/PyActor-example)
+
 # Code Coverage
 
 The code coverage of a project is the percentage of lines that are tested on
@@ -120,5 +127,11 @@ file, on the ``after_success`` section:
 
 This will upload the coverage data generated during the tests to codecov.io,
 that will present it on its website.
+
+Then, on the setting of your project, at codecov, you will find the badge to put
+on your readme.
+
+[![codecov](https://codecov.io/gh/danielBCN/PyActor-example/branch/master/graph/badge.svg)](https://codecov.io/gh/danielBCN/PyActor-example)
+
 
 # Code Health
