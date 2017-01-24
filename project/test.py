@@ -41,7 +41,7 @@ class BasicTest(unittest.TestCase):
 
     def test_mytest(self):
         # This is the test. You can put as much of them as you want. The name
-        # must begin with 'test_'.
+        # must begin with 'test'.
         self.bot.send_message("hi")
         sleep(.5)
         self.assertEquals("Bot : ...\n", self.out.lines)
