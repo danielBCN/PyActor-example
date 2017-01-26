@@ -39,6 +39,7 @@ tutorial.
 Just put your unit tests in the folder of the project in a way they can import
 the modules. If you want your tests to have their own folder, then you need to
 add your project to the PYTHONPATH in order to import the modules from outside.
+You can do that by hand, or by doing a setup.py file for the project.
 
 You have a little example of a test in this project, but you should find
 everything you need on the python docs:
@@ -158,7 +159,10 @@ means that the service analyzes the code searching for inconsistences with the
 PEP8 style guide, common bad smells and errors.
 
 This results in health rate that gives the code a score. Try to keep that score
-high, as your code gets mor readable and consistent.
+high, as your code gets more readable and consistent.
+
+To set this service up, logg in with your github account at https://landscape.io
+and givi it access to the repository so it checks every commit.
 
 Also, the health is represented in a badge that you can put on your readme for
 everyone to know.
@@ -177,7 +181,7 @@ Then, add a .rst file on the docs directory with the text you want.
 Reference that file in the index.rst file, so it appears on the docs' content
 tree.
 
-If you want to generate documentations from the source files, you will need to
+If you want to generate documentation from the source files, you will need to
 add the extension 'autodoc' during the sphinx setup. Then, add the corresponding
 lines on a .rst file. For this to work, the project must be installed in the
 python path, by creating a setup.py file and configuring it on readthedocs.
@@ -188,5 +192,16 @@ http://www.sphinx-doc.org/en/stable/rest.html
 And maybe you find useful this online editor, so you can see how the text will
 look like immediatly without having to build the whole documentation:
 http://rst.ninjs.org/
+
+You can change the style oof the page and more other thing in the ``conf,py``
+file.
+
+To build the docs on every commit, you have to logg in at http://readthedocs.org
+and link the repository. You need to fill all the information and configure
+how the docs will be built. For example, if the project has to be installed
+(on the python path) for the docs to be built, you should configure that on the
+website.
+
+It has also a badge:
 
 [![Documentation Status](https://readthedocs.org/projects/pyactor-example/badge/?version=latest)](http://pyactor-example.readthedocs.io/en/latest/?badge=latest)

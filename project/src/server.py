@@ -15,6 +15,13 @@ class Echo(object):
     _ask = []
 
     def echo(self, msg, sender):
+        '''
+        Print the message and and the sender as in a chat.
+
+        :param str msg: Message sent to be printed.
+        :param proxy sender: The actor that sent the message.
+            (Bot in this case)
+        '''
         print sender.get_name(), ':', msg
 
 
@@ -33,6 +40,7 @@ class Bot(object):
     def set_echo(self, echo):
         '''
         Sets the echo channel for the bot.
+
         :param echo: The echo actor channel.
         '''
         self.echo = echo
