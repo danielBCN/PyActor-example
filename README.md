@@ -155,14 +155,14 @@ on your readme.
 ## Code Health
 
 There is also another page that checks directly the health of your code. This
-means that the service analyzes the code searching for inconsistences with the
+means that the service analyzes the code searching for inconsistencies with the
 PEP8 style guide, common bad smells and errors.
 
 This results in health rate that gives the code a score. Try to keep that score
 high, as your code gets more readable and consistent.
 
-To set this service up, logg in with your github account at https://landscape.io
-and givi it access to the repository so it checks every commit.
+To set this service up, log in with your github account at https://landscape.io
+and give it access to the repository so it checks every commit.
 
 Also, the health is represented in a badge that you can put on your readme for
 everyone to know.
@@ -186,17 +186,17 @@ add the extension 'autodoc' during the sphinx setup. Then, add the corresponding
 lines on a .rst file. For this to work, the project must be installed in the
 python path, by creating a setup.py file and configuring it on readthedocs.
 
-On the sphinx docs you have a quik guide on the rst format:
+On the sphinx docs you have a quick guide on the rst format:
 http://www.sphinx-doc.org/en/stable/rest.html
 
 And maybe you find useful this online editor, so you can see how the text will
-look like immediatly without having to build the whole documentation:
+look like immediately without having to build the whole documentation:
 http://rst.ninjs.org/
 
-You can change the style oof the page and more other thing in the ``conf,py``
+You can change the style of the page and other things in the ``conf.py``
 file.
 
-To build the docs on every commit, you have to logg in at http://readthedocs.org
+To build the docs on every commit, you have to log in at http://readthedocs.org
 and link the repository. You need to fill all the information and configure
 how the docs will be built. For example, if the project has to be installed
 (on the python path) for the docs to be built, you should configure that on the

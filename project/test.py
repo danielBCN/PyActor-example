@@ -1,8 +1,8 @@
-'''
-Example project test unit.
+"""
+Example src test unit.
 
 Author: Daniel Barcelona Pons <daniel.barcelona@urv.cat>
-'''
+"""
 import unittest
 import sys
 
